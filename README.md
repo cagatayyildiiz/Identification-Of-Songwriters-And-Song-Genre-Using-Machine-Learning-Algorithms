@@ -39,6 +39,6 @@ determining song author and genre from lyrics using machine learning algorithms.
 - LSTM Songwriter Classification Results
 - 5 Genres was used for this classification
 
-# Comclusions 
+# Conclusions 
 
 - In conclusion, The conventional approach and deep learning methods have been built and tested. For author identification or classification (in this project case, Songwriter classification) , conventional machine learning techniques and LSTM model is compared and showed that model that trained Conventional Approach has higher accuracy. In classification problems like songwriters, It is not possible to collect big size of data. Data’s will be too short e.g. ( 20 or 30 lines for each lyric) and some songwriters does not have too many songs . For these reasons, it cannot be used Deep Learning Approach such as limited  and multi-class data.  At the end, in the scope of the project , a user interface has been implemented. 
