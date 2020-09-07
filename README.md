@@ -12,7 +12,9 @@ determining song author and genre from lyrics using machine learning algorithms.
 |SVM             |Decision Tree                  |Naive Bayes                  |
 |----------------|-------------------------------|-----------------------------|
 |F1 Score= 0.56  |F1 Score = 0.44                |F1-Score = 0.57              |
+(Comparison between Classifiers in Songwriter Classification) 
 
 |SVM             |Decision Tree                  |Naive Bayes                  |
 |----------------|-------------------------------|-----------------------------|
 |F1 Score= 0.71  |F1 Score = 0.59                |F1-Score = 0.73              |
+(Comparison between Classifiers in Song Genre Classification)
