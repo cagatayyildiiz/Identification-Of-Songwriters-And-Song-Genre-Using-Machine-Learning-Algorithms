@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predictions</title>
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/new.css') }}" />
+</head>
+<body>
+
+        <header>
+
+          <div class="view" style="background-image: url({{ url_for('static', filename='images/ortofon-vinyl.jpg') }}); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+
+            <div class="mask rgba-gradient align-items-center">
+
+              <div class="container">
+
+                <div class="row">
+
+                  <div class="col-md-6 white-text text-center text-md-left mt-xl-5 mb-5 wow fadeInLeft" data-wow-delay="0.3s">
+                    <h1 class="h1-responsive font-weight-bold mt-sm-5">Lets Make Some Predictions </h1>
+                    <hr class="hr-light">
+                    <h5  class="mb-4">
+                        Artificial Intelligence based application tries to predict Songwriters and Song Genres according to the given song lyrics
+                    </h5>
+
+                            <form action = "http://127.0.0.1:5008/prediction" method = "post">
+                             <p>A Song Lyric:</p>
+
+                             <p><input size="40" type = "text" name = "nm" /></p>
+                                <label><input name="options" value="DL" type="radio" >Deep Learning </label>
+                                <label><input name="options" value="SL" type="radio" >Supervised Learning </label>
+
+                             <p><button class="btn btn-sm btn-dark" style="padding: 1px 7px;text-align: center; " type = "submit" size="10px"  value = "submit" /> Submit</p>
+
+                          </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main>
+          <div class="container">
+            <div class="row py-5">
+              <div class="col-md-12 text-center">
+                <p>Please provide only turkish songs, AI will try to predict on given artists:
+
+                    {%for i in range(0, len)%}
+                       <br>{{Songwriters[i]}}
+                    {%endfor%}
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </main>
+
+
+</body>
+</html>
