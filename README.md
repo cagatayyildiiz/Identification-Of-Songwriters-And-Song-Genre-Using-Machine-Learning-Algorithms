@@ -20,5 +20,5 @@ determining song author and genre from lyrics using machine learning algorithms.
 |----------------|-------------------------------|-----------------------------|
 |F1 Score= 0.71  |F1 Score = 0.59                |F1-Score = 0.73              |
 
-> (Comparison between Classifiers in Song Genre Classification)
+- (Comparison between Classifiers in Song Genre Classification)
 - 5 Genres was used for this classification.
